@@ -1,22 +1,14 @@
 setTimeout(() => {
-  const message = document.querySelector("p");
+  const heading = document.querySelector("h1");
+  const message = document.querySelector("#message");
+  const lines = document.querySelector(".lines");
 
-  if (message) {
-    message.textContent = "Checking complete... 😵";
+  if (heading) {
+    heading.textContent = "VISUAL TEST COMPLETE";
+
   }
-}, 4000);
 
-const button = document.querySelector("button");
-
-if (button) {
-  button.addEventListener("click", () => {
-    const screen = document.querySelector(".screen");
-
-    if (screen) {
-      screen.innerHTML = `
-        <div style="font-size:60px">😂</div>
-        <h1 style="color:#00ff99">GOTCHA!</h1>
-      `;
-    }
-  });
-}
+  if (lines) {
+    lines.style.display = "none";
+  }
+}, 3000);
