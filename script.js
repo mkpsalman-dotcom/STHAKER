@@ -4,7 +4,7 @@ setTimeout(() => {
   if (message) {
     message.textContent = "Checking complete... 😵";
   }
-}, 3000);
+}, 600000);
 
 const button = document.querySelector("button");
 
