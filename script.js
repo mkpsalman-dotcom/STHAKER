@@ -1,14 +1,14 @@
 setTimeout(() => {
-  const heading = document.querySelector("h1");
-  const message = document.querySelector("#message");
-  const lines = document.querySelector(".lines");
+  const screen = document.querySelector(".screen");
 
-  if (heading) {
-    heading.textContent = "VISUAL TEST COMPLETE";
-
+  if (screen) {
+    screen.innerHTML = `
+      <h1 style="color:#00ff66; text-shadow:0 0 15px #00ff66;">
+        SALMAN
+      </h1>
+      <p style="color:#ff3030; font-size:20px;">
+        ACCESS SIMULATION COMPLETE
+      </p>
+    `;
   }
-
-  if (lines) {
-    lines.style.display = "none";
-  }
-}, 3000);
+}, 4000);
